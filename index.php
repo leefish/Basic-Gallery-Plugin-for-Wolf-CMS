@@ -74,7 +74,7 @@ function bg_main(){
 	$kla = Plugin::getSetting('folder', 'basic_gallery');
 	$wid = Plugin::getSetting('thumb_width', 'basic_gallery');
 	$hei = Plugin::getSetting('thumb_height', 'basic_gallery');
-	$gurl = Page::urlById($bolum);
+	$gurl = str_replace('.html', '', Page::urlById($bolum));
 	$p = Page::findById($bolum);
 	$kytb = $p->children();
 	$ici = '
