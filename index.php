@@ -61,7 +61,7 @@ function get_bg($id){
 			<a class="bg" href="/public/images/' . $kla . '/' . $k['dosya'] . '" title="' . $k['bilgi'] . '">
 				<img src="/public/images/' . $kla . '/zz_' . $k['dosya'] . '" border="0" title="' . $k['bilgi'] . '" />
 			</a>';
-		if($title) $ici .= '<span class="title">' . $k['bilgi'] . '<span>';
+		if($title) $ici .= '<span class="title">' . $k['bilgi'] . '</span>';
 		$ici .= '</li>';
 	}
 	$ici .= '</ul><br style="clear: both;" />';
@@ -87,7 +87,7 @@ function bg_main(){
 		<li id="foto_' . $k->id() . '">
 			<a href="' . $gurl . '/' . $k->slug() . '">
 				<img src="/public/images/' . $kla . '/zz_' . $s['dosya'] . '" border="0" title="' . $k->title() . '" />
-			</a><span class="title2">' . $k->title() . '<span>
+			</a><span class="title2">' . $k->title() . '</span>
 		</li>';
 	}
 	$ici .= '</ul><br style="clear: both;" />';
